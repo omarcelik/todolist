@@ -56,12 +56,12 @@ function refresh() {
     }
     //Create notdone icon
     ikona = document.createElement("img");
-    ikona.src = "/icons/notdone.svg";
+    ikona.src = "./icons/notdone.svg";
     ikona.id = "ikona";
     ikona.alt ="notdone";
     //Create trash icon
     let ikona1 = document.createElement ("img");
-    ikona1.src = "/icons/trash.svg";
+    ikona1.src = "./icons/trash.svg";
     ikona1.id = "ikona1";
     
     for (i=0; i<todos.length; i++) {
@@ -85,12 +85,12 @@ function refresh() {
 function fun() {
 
     if (this.alt == "notdone") {
-         this.src = "/icons/done.svg";
+         this.src = "./icons/done.svg";
          this.alt = "done";
          this.parentElement.children[0].classList.add('li-done');
     }
     else {
-         this.src = "/icons/notdone.svg";
+         this.src = "./icons/notdone.svg";
          this.alt = "notdone";
          this.parentElement.children[0].classList.remove('li-done')
     }
